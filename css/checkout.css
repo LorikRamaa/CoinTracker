@@ -1,0 +1,116 @@
+.complete-h1 {
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #007bff;
+  font-size: 44px;
+}
+
+.completePayment {
+  display: flex;
+  justify-content: space-between;
+  height: 60vh;
+  width: 100%;
+  align-items: center;
+}
+.addressRow {
+  width: 45%;
+}
+.form-control {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 10px 0;
+}
+.form-control input {
+  width: 100%;
+  padding: 10px 0 10px 10px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #858585;
+  transition: 0.3s linear;
+}
+.twoFrom-control {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-control input:focus {
+  border-color: #007bff;
+}
+.twoFrom-control input {
+  width: 100%;
+  margin: 0 10px 0 0;
+  padding: 10px 0 10px 10px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #858585;
+}
+#year,
+#name {
+  border-radius: 5px 0 0 5px;
+}
+
+#date,
+#surename {
+  border-radius: 0 5px 5px 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+label {
+  margin: 0 0 7px 0;
+}
+.order-summary {
+  background-color: #222222;
+  width: 45%;
+  padding: 20px;
+  color: #dfdfdf;
+}
+.order-div-text {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.buy-order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  margin: 20px 0 0 0;
+  justify-content: center;
+}
+.buy-order small {
+  color: rgb(204, 0, 0);
+  font-weight: 700;
+  display: none;
+}
+.buy-order button {
+  background-color: #007bff;
+  width: 90%;
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.afterPayment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+}
+.afterPayment h1 {
+  font-size: 45px;
+  margin: 20px 0;
+}
+.afterPayment i {
+  font-size: 65px;
+  color: #000 !important;
+}

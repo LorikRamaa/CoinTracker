@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link
+      rel="shortcut icon"
+      href="/assets/images/logo_icon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/payment.css" />
+    <link rel="stylesheet" href="/css/checkout.css" />
+    <link rel="stylesheet" href="/css/nav-bar.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section id="navbar">
+      <nav class="navbar">
+        <div class="container">
+          <div class="nav-align">
+            <div class="logo">
+              <a href="index.html">
+                <img src="/assets/images/logo_black.png" alt="" id="logo" />
+              </a>
+            </div>
+
+            <button class="menu__toggler" id="menu__toggler">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="links" id="links">
+              <a href="/index.html">Home</a>
+              <a href="./about-crypto.html">About</a>
+              <a href="./blog.html">Blog</a>
+              <a href="./coins.html">Coins</a>
+              <a href="./contact.html">Contact</a>
+              <div class="login-side" id="profileNameChange">
+                <a href="./signup.html">
+                  <i class="fa-solid fa-user"></i>Sign Up</a
+                >
+                <i class="fa-regular fa-sun" id="toggleDark"></i>
+              </div>
+              <div class="login-side" id="profileName">
+                <p id="navbarName"><i class="fa-solid fa-user"></i>Sign Up</p>
+                <div class="dropdown-menu">
+                  <div class="dropdown-menu-name">
+                    <img
+                      src="/assets/images/user_image.png"
+                      id="profileNav"
+                      alt=""
+                    />
+                    <div class="user-details">
+                      <h3 id="dropdown_name">test</h3>
+                      <p id="dropdown_email">test2</p>
+                    </div>
+                  </div>
+                  <a href="profile.html">Profile</a>
+                  <a href="profile-contact.html">Profile contact</a>
+                  <a href="contact.html">Contact</a>
+                  <button id="signoutBtn">Sign out</button>
+                  <i class="fa-regular fa-sun" id="toggleDarkTwo"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <br /><br /><br /><br /><br /><br />
+    <!-- buy -->
+    <section id="buyCrypto">
+      <div class="container">
+        <h1>Buy Crypto</h1>
+        <div class="form_container">
+          <div class="buy-form">
+            <div class="convertPrice">
+              <label for="price">Spend</label>
+              <div class="inputForm">
+                <input
+                  type="number"
+                  placeholder="15.00 - 20000.00"
+                  id="price"
+                  name="price"
+                  min="15"
+                  max="20000"
+                />
+                <div class="priceIcon">
+                  <i class="fa-solid fa-dollar-sign"></i>
+                  <p>USD</p>
+                </div>
+              </div>
+            </div>
+            <div class="convertPrice">
+              <label for="cryptoPrice">Recive</label>
+              <div class="inputForm">
+                <input
+                  type="number"
+                  placeholder="0.00"
+                  id="cryptoPrice"
+                  name="cryptoPrice"
+                  onkeydown="return false"
+                />
+                <div class="priceIcon" id="priceCrypto">
+                  <img src="/assets/images/btc.png" id="priceImage" alt="" />
+                  <p id="priceIconValue">BTC</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="addressRow">
+            <form>
+              <div class="twoFrom-control">
+                <div class="form-control">
+                  <label for="name">Name:</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    required
+                    placeholder="Your name..."
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="surename">Surename:</label>
+                  <input
+                    type="text"
+                    name="surename"
+                    id="surename"
+                    placeholder="Your Surename..."
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-control">
+                <label for="Email">Email:</label>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Your Email..."
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="number">Card number:</label>
+                <input
+                  type="number"
+                  name="number"
+                  id="number"
+                  placeholder="Your number..."
+                  maxlength="16"
+                  required
+                />
+              </div>
+              <div class="twoFrom-control">
+                <div class="form-control">
+                  <label for="">Expiration Year:</label>
+                  <input
+                    type="number"
+                    name="year"
+                    id="year"
+                    placeholder="xx"
+                    maxlength="2"
+                    min="0"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="">Expiration Date:</label>
+                  <input
+                    type="number"
+                    name="date"
+                    id="date"
+                    placeholder="xx"
+                    maxlength="2"
+                    min="0"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-control">
+                <label for="cvv">CVV:</label>
+                <input
+                  type="number"
+                  name="cvv"
+                  id="cvv"
+                  placeholder="xxx"
+                  maxlength="3"
+                  required
+                />
+              </div>
+              <div class="buy-order">
+                <button id="buyOrder">Buy</button><br />
+                <small id="completeForm">Complete all form</small>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="chooseCrypto">
+      <div class="choose">
+        <div class="cryptoList" id="cryptoList">
+          <div id="btc-name">
+            <img src="/assets/images/btc.png" alt="" />
+            BTC
+          </div>
+          <div id="eth-name">
+            <img src="/assets/images/eth.png" alt="" />ETH
+          </div>
+          <div id="usdt-name">
+            <img src="/assets/images/usdt.png" alt="" />USDT
+          </div>
+          <div id="bnb-name">
+            <img src="/assets/images/bnb.png" alt="" />BNB
+          </div>
+          <div id="doge-name">
+            <img src="/assets/images/doge.png" alt="" />DOGE
+          </div>
+          <div id="ltc-name">
+            <img src="/assets/images/shib.png" alt="" />SHIB
+          </div>
+          <div id="shib-name">
+            <img src="/assets/images/ada.png" alt="" />ADA
+          </div>
+          <div id="ada-name">
+            <img src="/assets/images/dot.png" alt="" />DOT
+          </div>
+          <div id="xrpc-name">
+            <img src="/assets/images/xrpc.png" alt="" />XRPC
+          </div>
+          <div id="dot-name">
+            <img src="/assets/images/ltc.png" alt="" />LTC
+          </div>
+        </div>
+        <div class="chooseBtn">
+          <button id="closeBtn">Close</button>
+        </div>
+      </div>
+    </section>
+    <script src="/js/payment.js"></script>
+    <script src="/js/getUser.js"></script>
+    <script src="/js/signout.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/profilePictureMenu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coins</title>
+    <link
+      rel="shortcut icon"
+      href="/assets/images/logo_icon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/nav-bar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <section id="navbar">
+      <nav class="navbar">
+        <div class="container">
+          <div class="nav-align">
+            <div class="logo">
+              <a href="index.html">
+                <img src="/assets/images/logo_black.png" alt="" id="logo" />
+              </a>
+            </div>
+
+            <button class="menu__toggler" id="menu__toggler">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="links" id="links">
+              <a href="/index.html">Home</a>
+              <a href="./about-crypto.html">About</a>
+              <a href="./blog.html">Blog</a>
+              <a href="./coins.html" class="linkActive">Coins</a>
+              <a href="./contact.html">Contact</a>
+              <div class="login-side" id="profileNameChange">
+                <a href="./signup.html">
+                  <i class="fa-solid fa-user"></i>Sign Up</a
+                >
+                <i class="fa-regular fa-sun" id="toggleDark"></i>
+              </div>
+              <div class="login-side" id="profileName">
+                <p id="navbarName"><i class="fa-solid fa-user"></i>Sign Up</p>
+                <div class="dropdown-menu">
+                  <div class="dropdown-menu-name">
+                    <img
+                      src="/assets/images/user_image.png"
+                      id="profileNav"
+                      alt=""
+                    />
+                    <div class="user-details">
+                      <h3 id="dropdown_name">test</h3>
+                      <p id="dropdown_email">test2</p>
+                    </div>
+                  </div>
+                  <a href="profile.html">Profile</a>
+                  <a href="profile-contact.html">Profile contact</a>
+                  <a href="contact.html">Contact</a>
+                  <button id="signoutBtn">Sign out</button>
+                  <i class="fa-regular fa-sun" id="toggleDarkTwo"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <br /><br /><br /><br /><br /><br /><br />
+    <!-- coins -->
+    <section id="cryptos">
+      <div class="container">
+        <h1 class="title-design">Cryptocurrencies</h1>
+        <br />
+        <div class="filter-input">
+          <input
+            type="text"
+            id="filter"
+            name="filter"
+            placeholder="Search..."
+          />
+        </div>
+        <div class="crypto-content">
+          <div class="crypto-row-title">
+            <table>
+              <thead>
+                <tr>
+                  <th class="left">Name</th>
+                  <th class="center">Last Price</th>
+                  <th class="right">Market Cap</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="left" id="btc-data">
+                    <!-- <img src="/assets/images/btc.png" alt="" /> -->
+                    <!-- <a href="" id="link-name"> </a> -->
+                  </td>
+                  <td class="center" id="btc-price">24000</td>
+                  <td class="right">€508,455B</td>
+                </tr>
+                <tr>
+                  <td class="left" id="eth-data">
+                    <!-- <img src="/assets/images/eth.png" alt="" /> -->
+                    <!-- <a href="" id="link-name"> </a> -->
+                  </td>
+                  <td class="center" id="eth-price">24000</td>
+                  <td class="right">€179,628B</td>
+                </tr>
+                <tr>
+                  <td class="left" id="usdt-data">
+                    <!-- <img src="/assets/images/tether.png" alt="" /> -->
+                    <!-- <a href="" id="link-name"> </a> -->
+                  </td>
+                  <td class="center" id="usdt-price">24000</td>
+                  <td class="right">€1,62B</td>
+                </tr>
+                <tr>
+                  <td class="left" id="doge-data">
+                    <!-- <img src="/assets/images/doge.png" alt="" /> -->
+                    <!-- <a href="/assets/pages/doge.html" id="link-name">
+                      DogeCoin</a
+                    > -->
+                  </td>
+                  <td class="center" id="doge-price">24000</td>
+                  <td class="right">€87,85M</td>
+                </tr>
+                <tr>
+                  <td class="left" id="bnb-data">
+                    <!-- <img src="/assets/images/bnb.png" alt="" />
+                    <a href="/assets/pages/bnb.html" id="link-name"> BNB</a> -->
+                  </td>
+                  <td class="center" id="bnb-price">24000</td>
+                  <td class="right">€254,70M</td>
+                </tr>
+                <tr>
+                  <td class="left" id="ltc-data">
+                    <!-- <img src="/assets/images/litecoin.png" alt="" />
+                    <a href="/assets/pages/litecoin.html" id="link-name"> -->
+                    <!-- LiteCoin</a
+                    > -->
+                  </td>
+                  <td class="center" id="ltc-price">24000</td>
+                  <td class="right">€170,75M</td>
+                </tr>
+                <tr>
+                  <td class="left" id="shib-data">
+                    <!-- <img src="/assets/images/shiba.png" alt="" />
+                    <a href="" id="link-name"> Shiba</a> -->
+                  </td>
+                  <td class="center" id="shib-price">24000</td>
+                  <td class="right">€52,06M</td>
+                </tr>
+                <tr>
+                  <td class="left" id="ada-data">
+                    <!-- <img src="/assets/images/cardano.png" alt="" />
+                    <a href="/assets/pages/cardano.html" id="link-name">
+                      Cardano</a
+                    > -->
+                  </td>
+                  <td class="center" id="ada-price">24000</td>
+                  <td class="right">€76,93M</td>
+                </tr>
+
+                <tr>
+                  <td class="left" id="xrpc-data">
+                    <!-- <img src="/assets/images/xrpc.png" alt="" />
+                    <a href="/assets/pages/xrpc.html" id="link-name"> XRPC</a> -->
+                  </td>
+                  <td class="center" id="xrpc-price">24000</td>
+                  <td class="right">€88,87M</td>
+                </tr>
+
+                <tr>
+                  <td class="left" id="dot-data">
+                    <!-- <img src="/assets/images/polkadot.png" alt="" />
+                    <a href="/assets/pages/polkadot.html" id="link-name">
+                      PolkaDot</a
+                    > -->
+                  </td>
+                  <td class="center" id="dot-price">24000</td>
+                  <td class="right">€46,04M</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br /><br /><br />
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about footer-box">
+            <a href="/index.html">
+              <img src="/assets/images/logo_white.png" alt="" />
+            </a>
+            <div class="about-text">
+              <p>
+                Enter your email to be notified by <span> CoinTracker </span>
+              </p>
+              <div class="about-email">
+                <input
+                  type="email"
+                  id="aboutEmail"
+                  placeholder="Your Email..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="footer-box">
+            <a href="#">Blog</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Explore</a>
+          </div>
+          <div class="footer-box">
+            <a href="#">Account</a>
+            <a href="#">Favourites</a>
+            <a href="#">Settings</a>
+            <a href="#">Login</a>
+          </div>
+        </div>
+        <div class="copyright-div">
+          <div class="left-copy">
+            <p>Copyrights ©2023 CoinTracker. All rights reserved.</p>
+          </div>
+          <div class="right-copy">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and conditions</a>
+            <a href="#">Refund policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- scripts -->
+
+    <script>
+      // filter
+      let filterInput = document.getElementById("filter");
+      function filterCoin(coin) {
+        let inputValue = coin.target.value.toLowerCase();
+
+        let listCoin = document.querySelectorAll("tr");
+        listCoin.forEach((coin) => {
+          const coinName = coin.textContent.toLowerCase();
+          // console.log(coinName);
+          if (coinName.indexOf(inputValue) != -1) {
+            coin.style.display = "table-row";
+          } else {
+            coin.style.display = "none";
+          }
+        });
+      }
+      filterInput.addEventListener("input", filterCoin);
+    </script>
+    <script src="/js/prices.js"></script>
+    <script src="/js/getUser.js"></script>
+    <script src="/js/signout.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/profilePictureMenu.js"></script>
+  </body>
+</html>

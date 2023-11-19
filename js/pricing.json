@@ -1,0 +1,35 @@
+[
+  {
+    "id": 0,
+    "title": "Basic",
+    "price": 19.99,
+    "features": {
+      "first": "20GB Storage",
+      "second": "Costum email domain",
+      "third": "24/7 support",
+      "forth": "3 crypots able to buy"
+    }
+  },
+  {
+    "id": 1,
+    "title": "Premium",
+    "price": 99.99,
+    "features": {
+      "first": "100GB storage",
+      "second": "Costum email domain",
+      "third": "24/7 support",
+      "forth": "Be able to trade coins"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Standard",
+    "price": 59.99,
+    "features": {
+      "first": "100GB storage",
+      "second": "Costum email domain",
+      "third": "24/7 support",
+      "forth": "10 crypos able to buy"
+    }
+  }
+]

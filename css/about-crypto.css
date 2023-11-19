@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  transition: 0.3s linear;
+}
+body.darkActive {
+  background-color: #222222;
+  color: #fff;
+}
+
+#all {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.about-crypto {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tittle {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+.text {
+  width: 40%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.what-drives {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.first-box-row {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  margin: 15px;
+}
+.second-box-row {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  margin: 15px;
+}
+.third-box-row {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  margin: 15px;
+}
+.second-pricing-box {
+  transform: scale(1.1);
+  background-color: #0052a9 !important;
+}
+.first-about-box,
+.second-about-box,
+.third-about-box,
+.fourth-about-box,
+.fifth-about-box,
+.sixth-about-box {
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+  background-color: #007bff;
+  color: white;
+  margin: 10px;
+  border-radius: 8px;
+  padding: 10px;
+}
+.icon-div {
+  width: 20%;
+  margin: 20px;
+  color: #007bff;
+}
+.tittle-text {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: 20px;
+}
+.what-drives i {
+  font-size: 40px;
+  color: white;
+  background-color: #005bbc;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.buy-trade {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.buy-trade-crypto {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.tittle2 {
+  width: 60%;
+  font-size: 60px;
+  margin-bottom: 15px;
+  margin: auto;
+}
+.text2 {
+  width: 45%;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+.buy-button {
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+}
+.buy {
+  padding: 10px;
+  color: white;
+  background-color: #007bff;
+  border-radius: 5px;
+  border: 1px solid #007bff;
+}
+.view-pricing {
+  padding: 10px;
+  color: #007bff;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #007bff;
+}
+.buy-photo-div {
+  width: 95%;
+  margin: auto;
+}
+.buy-photo {
+  width: 100%;
+}
+.pricing-div {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.tittle3 {
+  width: 60%;
+  font-size: 70px;
+  margin-bottom: 15px;
+  margin: auto;
+}
+.text3 {
+  width: 45%;
+  margin: auto;
+  margin-bottom: 40px;
+  margin-top: 15px;
+}
+.pricing-row-div {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+.first-pricing-box,
+.second-pricing-box,
+.third-pricing-box {
+  width: 29%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #007bff;
+  color: white;
+  margin: 15px;
+  border-radius: 10px;
+}
+.h1-price {
+  font-size: 45px;
+  margin: 15px;
+  text-align: center;
+}
+.pricing-text {
+  font-size: 40px;
+  width: 80%;
+  margin: 15px auto;
+}
+.h3-price {
+  font-size: 25px;
+  text-align: left;
+  margin: 10px;
+}
+.h1-price span {
+  font-size: 24px;
+}
+ul {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 10px;
+}
+li {
+  margin: 8px;
+}
+.pricing-button-div {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin: auto;
+  justify-content: center;
+}
+.add-cart {
+  width: 45%;
+  margin: 10px;
+  background-color: #005bbc;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #005bbc;
+}
+.buy-now {
+  width: 100%;
+  cursor: pointer;
+  margin: 10px;
+  background-color: white;
+  color: #007bff;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid white;
+}
+.buy-now a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* footer */
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+#footer {
+  background-color: #0b0a12;
+  padding: 50px 0;
+}
+.footer-box {
+  width: 30%;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #b3b3b3;
+}
+.footer-box img {
+  width: 100%;
+}
+.footer-content .footer-box a {
+  color: #b3b3b3;
+  text-decoration: none;
+  padding: 10px 0;
+  transition: 0.3s linear;
+}
+.footer-content .footer-box a:hover {
+  color: #fff;
+}
+.footer-content .footer-about input {
+  border: 1px solid #b3b3b3;
+  padding: 15px;
+  border-radius: 30px;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  color: #fff;
+  transition: 0.3s linear;
+  margin: 10px 0 20px 0;
+}
+.footer-content .footer-about input:focus {
+  border-color: #fff;
+}
+.about-text p {
+  margin: 10px 0 20px 0;
+}
+.about-text p span {
+  color: #007bff;
+  font-weight: 600;
+}
+
+.copyright-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #b3b3b3;
+  margin: 10px 0 0 0;
+  border-top: 1px solid #85878a;
+  padding: 25px 0 0 0;
+}
+.copyright-div .left-copy p {
+  color: #b3b3b3;
+  font-weight: 600;
+}
+.copyright-div .right-copy a {
+  color: #b3b3b3;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.3s linear;
+}
+.copyright-div .right-copy a:hover {
+  color: #fff;
+}
+/* footer */
+@media screen and (max-width: 1100px) {
+  .first-box-row,
+  .second-box-row,
+  .third-box-row {
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+  }
+  .first-about-box,
+  .second-about-box,
+  .third-about-box,
+  .fourth-about-box,
+  .fifth-about-box,
+  .sixth-about-box {
+    width: 90%;
+    margin: 10px 0;
+  }
+  .pricing-row-div {
+    align-items: center;
+    flex-direction: column;
+  }
+  .first-pricing-box,
+  .second-pricing-box,
+  .third-pricing-box {
+    width: 70%;
+    margin: 20px 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .footer-content {
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer-box {
+    width: 90%;
+    margin: 20px 0;
+  }
+  .copyright-div {
+    flex-direction: column;
+  }
+}

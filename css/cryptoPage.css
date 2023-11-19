@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+body {
+  transition: 0.3s linear;
+}
+body.darkActive {
+  background-color: #222222;
+  color: #fff;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  margin: auto;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* chart */
+.chart-div {
+  width: 60%;
+}
+#myLineChart {
+  width: 100%;
+  height: 400px !important;
+}
+/* charts */
+
+/* prices */
+#cryptoPrice {
+  margin: 160px 0;
+}
+.chartContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.cryptoPrice {
+  font-size: 37px;
+  font-family: "Roboto", sans-serif;
+  margin: 10px 0;
+}
+.crypto-name {
+  font-size: 45px;
+}
+.crypto-logo {
+  width: 50px;
+  margin-right: 20px;
+}
+.crypto-details {
+  display: flex;
+  flex-direction: column;
+}
+.crypto-name {
+  display: flex;
+  align-items: center;
+}
+.buy-crypto {
+  width: 39%;
+  display: flex;
+  flex-direction: column;
+}
+.buy-content {
+  display: flex;
+  flex-direction: column;
+}
+.buy-control {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 0 0;
+}
+.buy-control input {
+  padding: 30px 0 30px 30px;
+  border: 1px solid #b3b3b3;
+  background-color: #fff;
+  margin: 10px 0 20px 0;
+  border-radius: 10px;
+  font-size: 22px;
+  outline: none;
+  transition: 0.3s linear;
+}
+.buy-control input:focus {
+  border-color: #007bff;
+}
+.buy-control input::-webkit-outer-spin-button,
+.buy-control input::-webkit-inner-spin-button {
+  padding: 10px;
+  height: 10vh;
+  transition: 0.2s linear;
+}
+.buy-control input::-webkit-outer-spin-button:hover,
+.buy-control input::-webkit-inner-spin-button:hover {
+  background-color: #007bff !important;
+  color: #fff !important;
+}
+
+.crypto-buy-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 20px 0;
+}
+.button {
+  width: 100%;
+  display: flex;
+}
+.button button {
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.buy-title {
+  border-bottom: 3px solid #007bff;
+  font-size: 30px;
+  width: 100%;
+}
+#buyCryptoSubmit {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffffb0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+.cryptoBuy {
+  box-shadow: 0px 0px 40px rgb(29 58 83 / 30%) !important;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  height: 200px;
+  margin-top: -265px;
+  transition: 0.3s linear;
+}
+#buyCryptoSubmit.buyActive {
+  visibility: visible;
+  opacity: 1;
+}
+#buyCryptoSubmit.buyActive .cryptoBuy {
+  margin-top: 0;
+}
+.doneButton {
+  width: 100%;
+  display: flex;
+}
+.doneButton button {
+  background-color: #007bff;
+  border: none;
+  outline: none;
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+  color: #fff;
+  font-weight: 700;
+  font-size: 19px;
+  cursor: pointer;
+}
+.cryptoBuy h3 {
+  color: red;
+}
+body.darkActive .buy-control input {
+  padding: 30px 0 30px 30px;
+  border: 1px solid #0b0a12;
+  background-color: #0b0a12;
+  color: #fff;
+}
+body.darkActive #buyCryptoSubmit {
+  background-color: #000000b0;
+}
+body.darkActive .cryptoBuy {
+  background-color: #070708;
+  box-shadow: 0px 0px 11px 9px rgb(0 0 0 / 30%) !important;
+}
+
+/* footer */
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+#footer {
+  background-color: #0b0a12;
+  padding: 50px 0;
+}
+.footer-box {
+  width: 30%;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #b3b3b3;
+}
+.footer-box img {
+  width: 100%;
+}
+.footer-content .footer-box a {
+  color: #b3b3b3;
+  text-decoration: none;
+  padding: 10px 0;
+  transition: 0.3s linear;
+}
+.footer-content .footer-box a:hover {
+  color: #fff;
+}
+.footer-content .footer-about input {
+  border: 1px solid #b3b3b3;
+  padding: 15px;
+  border-radius: 30px;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  color: #fff;
+  transition: 0.3s linear;
+  margin: 10px 0 20px 0;
+}
+.footer-content .footer-about input:focus {
+  border-color: #fff;
+}
+.about-text p {
+  margin: 10px 0 20px 0;
+}
+.about-text p span {
+  color: #007bff;
+  font-weight: 600;
+}
+
+.copyright-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #b3b3b3;
+  margin: 10px 0 0 0;
+  border-top: 1px solid #85878a;
+  padding: 25px 0 0 0;
+}
+.copyright-div .left-copy p {
+  color: #b3b3b3;
+  font-weight: 600;
+}
+.copyright-div .right-copy a {
+  color: #b3b3b3;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.3s linear;
+}
+.copyright-div .right-copy a:hover {
+  color: #fff;
+}
+/* about-crypto */
+.about-crypto {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 30px 0 50px 0;
+}
+.about-crypto h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+  /* border-bottom: 3px solid #007bff; */
+}
+.about-crypto-text {
+  margin: 10px 0;
+}
+#btcToEurBuy,
+#btcToEur,
+#ethToEurBuy,
+#ethToEur,
+#usdtToEurBuy,
+#usdtToEur {
+  font-family: "Roboto", sans-serif;
+}
+.doneButton button a {
+  color: #fff;
+  text-decoration: none;
+}
+@media screen and (max-width: 900px) {
+  .chartContent {
+    flex-direction: column;
+  }
+  .chart-div {
+    width: 100%;
+  }
+  .buy-crypto {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-box {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .copyright-div {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) {
+  .crypto-name {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Wallet</title>
+    <link
+      rel="shortcut icon"
+      href="/assets/images/logo_icon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/nav-bar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section id="navbar">
+      <nav class="navbar">
+        <div class="container">
+          <div class="nav-align">
+            <div class="logo">
+              <a href="index.html">
+                <img src="./assets/images/logo_black.png" alt="" id="logo" />
+              </a>
+            </div>
+
+            <button class="menu__toggler" id="menu__toggler">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="links" id="links">
+              <a href="/index.html" class="linkActive">Home</a>
+              <a href="assets/pages/about-crypto.html">About</a>
+              <a href="assets/pages/blog.html">Blog</a>
+              <a href="assets/pages/coins.html">Coins</a>
+              <a href="assets/pages/contact.html">Contact</a>
+              <div class="login-side" id="profileNameChange">
+                <a href="/assets/pages/signup.html">
+                  <i class="fa-solid fa-user"></i>Sign Up</a
+                >
+                <!-- <p>aasdasd</p> -->
+                <i class="fa-regular fa-sun" id="toggleDark"></i>
+              </div>
+              <div class="login-side" id="profileName">
+                <p id="navbarName"><i class="fa-solid fa-user"></i></p>
+                <div class="dropdown-menu">
+                  <div class="dropdown-menu-name">
+                    <img src="/assets/images/user_image.png" alt="" />
+                    <div class="user-details">
+                      <h3 id="dropdown_name">test</h3>
+                      <p id="dropdown_email">test2</p>
+                    </div>
+                  </div>
+                  <a href="/assets/pages/profile.html">Profile</a>
+                  <a href="/assets/pages/profile-contact.html"
+                    >Profile contact</a
+                  >
+                  <a href="/assets/pages/contact.html">Contact</a>
+                  <button id="signoutBtn">Sign out</button>
+                  <i class="fa-regular fa-sun" id="toggleDarkTwo"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- home -->
+    <section id="home">
+      <div class="container">
+        <div class="home-text">
+          <div class="left-text">
+            <h1>Create your <br /><span>crypto</span> wallet</h1>
+            <p>
+              CoinTracker is the easiest place to buy and sell cryptocurrency.
+              Sign up and get started today.
+            </p>
+            <a href="/assets/pages/signup.html">
+              <button class="invest">Start investing</button>
+            </a>
+          </div>
+          <div class="right-div">
+            <img src="./assets/images/1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cryptos -->
+    <section id="popularCrypto">
+      <div class="container">
+        <h1 class="title-design">Popular Cryptocurrencies</h1>
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <script
+            type="text/javascript"
+            src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js"
+            async
+          >
+            {
+                        "width": "100%",
+                        "height": "490",
+                        "defaultColumn": "overview",
+                        "screener_type": "crypto_mkt",
+                        "displayCurrency": "USD",
+                        "colorTheme": "light",
+                        "locale": "en"
+                      }
+          </script>
+        </div>
+        <!-- TradingView Widget END -->
+      </div>
+
+      <!-- Powerfull features  -->
+      <br /><br /><br /><br />
+      <section id="features">
+        <div class="container">
+          <h1 class="title-design">Our powerfull features</h1>
+          <div class="features-box">
+            <div class="box">
+              <h3><i class="fa-solid fa-dollar-sign"></i> Sell and Buy</h3>
+              <div class="box-desc">
+                <p>
+                  Crypts make it easy for you to make transactions in terms of
+                  buying sell and to trade
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <h3>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i> Easy to Trade
+              </h3>
+              <div class="box-desc">
+                <p>
+                  With this feature you can switch or trade your digital assets
+                  with others
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <h3><i class="fa-solid fa-lock"></i> Security</h3>
+              <div class="box-desc">
+                <p>
+                  We have been verified by OJK or financial bodies, so we can be
+                  sure the platform is safe
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <br /><br /><br />
+    <!-- crypto's -->
+    <section id="cryptos">
+      <div class="container">
+        <h1 class="title-design">Some Cryptocurrencies</h1>
+        <br />
+        <div class="crypto-content">
+          <div class="crypto-row-title">
+            <table>
+              <thead>
+                <tr>
+                  <th class="left">Name</th>
+                  <th class="center">Last Price</th>
+                  <th class="right">Market Cap</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="left" id="btc-data">
+                    <!-- <img src="/assets/images/btc.png" alt="" />
+                    <a href="/assets/pages/bitcoin.html"> Bitcoin</a> -->
+                  </td>
+                  <td class="center" id="btc-price">24000</td>
+                  <td class="right">€508,455M</td>
+                </tr>
+                <tr>
+                  <td class="left" id="eth-data">
+                    <!-- <img src="/assets/images/eth.png" alt="" />
+                    <a href="/assets/pages/ethereum.html"> Ethereum</a> -->
+                  </td>
+                  <td class="center" id="eth-price">24000</td>
+                  <td class="right">€179,628M</td>
+                </tr>
+                <tr>
+                  <td class="left" id="doge-data">
+                    <!-- <img src="/assets/images/doge.png" alt="" />
+                    <a href="/assets/pages/doge.html"> DogeCoin</a> -->
+                  </td>
+                  <td class="center" id="doge-price">24000</td>
+                  <td class="right">€80,23M</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="load-more">
+              <button><a href="/assets/pages/coins.html"> Load more</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br /><br /><br /><br />
+    <section id="joinCrypto">
+      <div class="joincrypto">
+        <h1>Join CoinTracker now</h1>
+        <br />
+        <p>CoinTracker is a platform to invest in crypto easy and earn more</p>
+        <br />
+        <a href="/assets/pages/login.html">
+          <button class="joincrypto-btn">Join now!</button></a
+        >
+      </div>
+    </section>
+
+    <br /><br /><br /><br />
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about footer-box">
+            <a href="index.html">
+              <img src="./assets/images/logo_white.png" alt="" />
+            </a>
+            <div class="about-text">
+              <p>
+                Enter your email to be notified by <span> CoinTracker </span>
+              </p>
+              <div class="about-email">
+                <input
+                  type="email"
+                  id="aboutEmail"
+                  placeholder="Your Email..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="footer-box">
+            <a href="#">Blog</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Explore</a>
+          </div>
+          <div class="footer-box">
+            <a href="#">Account</a>
+            <a href="#">Favourites</a>
+            <a href="#">Settings</a>
+            <a href="#">Login</a>
+          </div>
+        </div>
+        <div class="copyright-div">
+          <div class="left-copy">
+            <p>Copyrights ©2023 CoinTracker. All rights reserved.</p>
+          </div>
+          <div class="right-copy">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and conditions</a>
+            <a href="#">Refund policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- prices -->
+    <script src="./js/indexPrices.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="/js/getUser.js"></script>
+    <script src="/js/signout.js"></script>
+  </body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Page</title>
+    <link
+      rel="shortcut icon"
+      href="/assets/images/logo_icon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/cryptoPage.css" />
+    <link rel="stylesheet" href="/css/nav-bar.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section id="navbar">
+      <nav class="navbar">
+        <div class="container">
+          <div class="nav-align">
+            <div class="logo">
+              <a href="index.html">
+                <img src="/assets/images/logo_black.png" alt="" id="logo" />
+              </a>
+            </div>
+
+            <button class="menu__toggler" id="menu__toggler">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="links" id="links">
+              <a href="/index.html">Home</a>
+              <a href="./about-crypto.html">About</a>
+              <a href="./blog.html">Blog</a>
+              <a href="./coins.html">Coins</a>
+              <a href="./contact.html">Contact</a>
+              <div class="login-side" id="profileNameChange">
+                <a href="./signup.html">
+                  <i class="fa-solid fa-user"></i>Sign Up</a
+                >
+                <i class="fa-regular fa-sun" id="toggleDark"></i>
+              </div>
+              <div class="login-side" id="profileName">
+                <p id="navbarName"><i class="fa-solid fa-user"></i>Sign Up</p>
+                <div class="dropdown-menu">
+                  <div class="dropdown-menu-name">
+                    <img
+                      src="/assets/images/user_image.png"
+                      id="profileNav"
+                      alt=""
+                    />
+                    <div class="user-details">
+                      <h3 id="dropdown_name">test</h3>
+                      <p id="dropdown_email">test2</p>
+                    </div>
+                  </div>
+                  <a href="profile.html">Profile</a>
+                  <a href="profile-contact.html">Profile contact</a>
+                  <a href="contact.html">Contact</a>
+                  <button id="signoutBtn">Sign out</button>
+                  <i class="fa-regular fa-sun" id="toggleDarkTwo"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section id="cryptoPrice">
+      <div class="container">
+        <!-- <div class="spinner-container"></div>
+          <div class="spinner" id="spinner"></div> -->
+        <div class="crypto" id="crypto-container">
+          <!-- <input type="number" id="buy" name="buy" value="1" placeholder="1" /> -->
+        </div>
+      </div>
+    </section>
+    <section id="buyCryptoSubmit">
+      <div class="cryptoBuy" id="cryptoBuy">
+        <br /><br /><br />
+        <h3>*Note* You can't buy this crypto right now</h3>
+        <br /><br />
+
+        <div class="doneButton">
+          <button id="done" onclick="unActiveBuy()">Done</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- about btc -->
+    <section id="aboutCrypto">
+      <div class="container">
+        <div class="about-crypto" id="aboutContainer">
+          <h1>About Bitcoin (BTC)</h1>
+
+          <div class="about-crypto-text">
+            <p>
+              Bitcoin is one of the most popular cryptocurrencies in the market.
+              First introduced in 2009 by Satoshi Nakamoto, Bitcoin has held the
+              crypto market’s number one spot according to market
+              capitalization. Bitcoin paved the way for many existing altcoins
+              in the market and marked a pivotal moment for digital payment
+              solutions. <br /><br />
+              As the world’s first cryptocurrency, Bitcoin has come a long way
+              in terms of its value. However, one does not have to buy an entire
+              bitcoin as bitcoins can be divided into small units called
+              satoshis, named after the creator. A satoshi is equivalent to
+              0.00000001 bitcoin.
+              <br /><br />
+              There is no physical BTC token so Bitcoin operates as a digital
+              currency. Bitcoin transactions are fully transparent and can’t be
+              censored, providing a global, censorship-resistant medium for
+              financial exchange. It’s a financial system backed by
+              decentralized network of computers, known as ‘nodes’, instead of
+              centralized banking or governmental entity, thereby promoting
+              ‘decentralization’.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about footer-box">
+            <a href="index.html">
+              <img src="/assets/images/logo_white.png" alt="" />
+            </a>
+            <div class="about-text">
+              <p>
+                Enter your email to be notified by <span> CoinTracker </span>
+              </p>
+              <div class="about-email">
+                <input
+                  type="email"
+                  id="aboutEmail"
+                  placeholder="Your Email..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="footer-box">
+            <a href="#">Blog</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Explore</a>
+          </div>
+          <div class="footer-box">
+            <a href="#">Account</a>
+            <a href="#">Favourites</a>
+            <a href="#">Settings</a>
+            <a href="#">Login</a>
+          </div>
+        </div>
+        <div class="copyright-div">
+          <div class="left-copy">
+            <p>Copyrights ©2023 CoinTracker. All rights reserved.</p>
+          </div>
+          <div class="right-copy">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and conditions</a>
+            <a href="#">Refund policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="/js/aboutJson.js"></script>
+    <script src="/js/getUser.js"></script>
+
+    <script src="/js/chartPrices.js"></script>
+    <script src="/js/signout.js"></script>
+    <script src="/js/profilePictureMenu.js"></script>
+  </body>
+</html>

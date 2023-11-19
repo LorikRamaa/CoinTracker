@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+body {
+  transition: 0.3s linear;
+}
+body.darkActive {
+  background-color: #222222;
+  color: #fff;
+}
+
+/* price */
+#buyCrypto {
+  height: 100vh;
+}
+#buyCrypto h1 {
+  font-size: 40px;
+  text-decoration: underline;
+  text-decoration-color: #007bff;
+  text-align: center;
+  margin: 15px 0 25px 0;
+}
+.buy-form {
+  width: 40%;
+}
+.cryptoList div {
+  cursor: pointer;
+}
+.convertPrice {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 15px 20px;
+  border: 1px solid #b3b3b3;
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.3s linear;
+  margin: 20px 0;
+}
+.convertPrice:hover {
+  border: 1px solid #007bff;
+}
+.inputForm input::-webkit-outer-spin-button,
+.inputForm input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+.convertPrice .inputForm input:focus .convertPrice {
+  border: 1px solid #007bff !important;
+}
+.inputForm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.inputForm input {
+  border: none;
+  padding: 15px 0;
+  width: 100%;
+  font-size: 17px;
+  outline: none;
+  transition: 0.3s linear;
+}
+
+.convertPrice label {
+  font-size: 14px;
+}
+.priceIcon {
+  display: flex;
+  padding: 5px 25px 5px 5px;
+  color: #fff !important;
+  font-weight: 500;
+  background-color: #222222;
+  border-radius: 10px;
+  align-items: center;
+}
+.priceIcon i {
+  padding: 15px;
+  background-color: #007bff;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.priceIcon img {
+  width: 40px;
+  padding: 2px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.form_container {
+  display: flex;
+  justify-content: space-between;
+}
+#chooseCrypto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffffb0;
+  transition: 0.3s linear;
+  visibility: hidden;
+  opacity: 0;
+}
+#chooseCrypto.chooseActive {
+  visibility: visible;
+  opacity: 1;
+}
+.cryptoList img {
+  width: 30px;
+  margin-right: 10px;
+}
+.cryptoList div {
+  display: flex;
+  align-items: center;
+}
+.choose {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  box-shadow: 0px 0px 40px rgb(29 58 83 / 30%) !important;
+  width: 30%;
+  border-radius: 5px;
+  background-color: #ffffff;
+  transition: 0.3s linear;
+  transform: translateY(-50px);
+}
+#chooseCrypto.chooseActive .choose {
+  transform: translateY(0px);
+}
+.cryptoList div {
+  margin: 15px 0;
+}
+
+.chooseBtn button {
+  width: 100%;
+  border: none;
+  padding: 10px 0;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.chooseBtn {
+  width: 100%;
+}
