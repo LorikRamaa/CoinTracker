@@ -5,6 +5,6 @@ function signOut() {
   localStorage.removeItem("currentUserID");
   localStorage.removeItem("accountStatus");
 
-  window.location.href = "/index.html";
+  window.location.href = "../../index.html";
 }
 signoutBtn.addEventListener("click", signOut);

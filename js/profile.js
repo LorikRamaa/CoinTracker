@@ -233,6 +233,7 @@ function changeName() {
     if (user.id === userId) {
       user.username = newNameInput.value;
       newNameInput.value = "";
+      location.reload();
       localStorage.setItem("users", JSON.stringify(userNewName));
       alert("Refresh the page to see the changed name!");
     }
@@ -253,6 +254,7 @@ function changeEmail() {
     if (user.id === userId) {
       user.email = newEmailInput.value;
       newEmailInput.value = "";
+      location.reload();
       localStorage.setItem("users", JSON.stringify(userNewEmail));
       alert("Refresh the page to see the changed email!");
     }
@@ -275,6 +277,7 @@ function changePsw() {
       localStorage.setItem("users", JSON.stringify(userNewEmail));
       newPswInput.value = "";
       newPswInputSec.value = "";
+      location.reload();
     } else {
       console.log("joo");
     }
