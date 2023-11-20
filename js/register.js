@@ -26,7 +26,7 @@ function signUp(e) {
   localStorage.setItem("currentUserID", JSON.stringify(user.id));
   localStorage.setItem("users", JSON.stringify(users));
   localStorage.setItem("accountStatus", "Free");
-  window.location.href = "/assets/pages/login.html";
+  window.location.href = "../../assets/pages/login.html";
   console.log(users);
   // users.forEach((item) => {
   //   if (item.username === user.username) {

@@ -16,7 +16,7 @@ function login(e) {
     if (user.username === email && user.password === pwd) {
       localStorage.setItem("currentUserID", JSON.stringify(user.id));
       localStorage.setItem("isLoggedIn", JSON.stringify(user.username));
-      window.location.href = "/assets/pages/profile.html";
+      window.location.href = "../../assets/pages/profile.html";
     } else if (user.username != email) {
       let wrongEmail = document.getElementById("wrongEmail");
       wrongEmail.style.display = "block";

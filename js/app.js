@@ -21,9 +21,9 @@ toggleTwo.addEventListener("click", function () {
   console.log(logo);
 
   if (this.classList.toggle("fa-sun")) {
-    logo.src = "/assets/images/logo_black.png";
+    logo.src = "../../assets/images/logo_black.png";
   } else {
-    logo.src = "/assets/images/logo_white.png";
+    logo.src = "../../assets/images/logo_white.png";
   }
 });
 
