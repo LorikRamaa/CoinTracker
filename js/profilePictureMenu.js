@@ -5,7 +5,7 @@ let changedImgUser = JSON.parse(localStorage.getItem("users")) || [];
 changedImgUser.forEach((user) => {
   if (user.id === userId && user.pfp != "") {
     profileNav.src =
-      "/assets/profiles/" +
+      "../../assets/profiles/" +
         changedImgUser.find((user) => user.id === userId)?.pfp || "";
   }
 });
