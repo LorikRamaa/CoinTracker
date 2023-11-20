@@ -7,8 +7,8 @@ async function fetchData() {
   displayProduct(cruptoData);
 }
 
-let count = document.getElementById("buy").value;
 function updatePrice() {
+  let count = document.getElementById("buy").value;
   let price = document.getElementById("coin_price").innerText;
   let priceHolder = document.getElementById("coinToEur");
   let priceHolderBuy = document.getElementById("btcToEurBuy");
