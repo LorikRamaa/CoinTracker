@@ -208,13 +208,13 @@ function changePfp() {
 
     // Set the src based on the updated data
     avatar_info.src =
-      "/assets/profiles/" +
+      "../../assets/profiles/" +
         changedImgUser.find((user) => user.id === userId)?.pfp || "";
     profile_p.src =
-      "/assets/profiles/" +
+      "../../assets/profiles/" +
         changedImgUser.find((user) => user.id === userId)?.pfp || "";
     profileNav.src =
-      "/assets/profiles/" +
+      "../../assets/profiles/" +
         changedImgUser.find((user) => user.id === userId)?.pfp || "";
   }
 }
@@ -295,11 +295,11 @@ document.addEventListener("DOMContentLoaded", function () {
       if (element.id == userId) {
         console.log(element.pfp);
         const avatar_info = document.querySelector(".avatar_info");
-        avatar_info.src = "/assets/profiles/" + element.pfp;
+        avatar_info.src = "../../assets/profiles/" + element.pfp;
         const profileNav = document.querySelector("#profileNav");
-        profileNav.src = "/assets/profiles/" + element.pfp;
+        profileNav.src = "../../assets/profiles/" + element.pfp;
         const profile_p = document.querySelector("#profile_p");
-        profile_p.src = "/assets/profiles/" + element.pfp;
+        profile_p.src = "../../assets/profiles/" + element.pfp;
         const fullnameTitle = document.getElementById("fullnameTitle");
         fullnameTitle.textContent = element.username;
         const userGreeting = document.getElementById("changeName");

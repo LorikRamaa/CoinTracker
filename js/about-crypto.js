@@ -2,7 +2,7 @@ let container = document.getElementById("first_pricing_box");
 // console.log(container);
 
 async function pricing() {
-  await fetch("/js/pricing.json")
+  await fetch("../../js/pricing.json")
     .then((response) => {
       return response.json();
     })
@@ -65,7 +65,7 @@ pricing();
 
 async function fetchPricing() {
   const productId = new URLSearchParams(window.location.search).get("id");
-  const response = await fetch(`/js/pricing.json?id=${productId}`);
+  const response = await fetch(`../../js/pricing.json?id=${productId}`);
 
   const data = await response.json();
   console.log(data, "id data");
