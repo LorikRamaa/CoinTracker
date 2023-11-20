@@ -1,348 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link
+      rel="shortcut icon"
+      href="/assets/images/logo_icon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../../css/nav-bar.css" />
+    <link rel="stylesheet" href="../../css/profile.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Profile</title>
-  <link rel="shortcut icon" href="/assets/images/logo_icon.png" type="image/x-icon" />
-  <link rel="preconnect" href="https://fonts.googleapis.com/" />
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="/css/nav-bar.css" />
-  <link rel="stylesheet" href="/css/profile.css" />
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
+  <body>
+    <section id="navbar">
+      <nav class="navbar">
+        <div class="container">
+          <div class="nav-align">
+            <div class="logo">
+              <a href="../../index.html">
+                <img
+                  src="../../assets/images/logo_black.png"
+                  alt=""
+                  id="logo"
+                />
+              </a>
+            </div>
 
-<body>
-  <section id="navbar">
-    <nav class="navbar">
+            <button class="menu__toggler" id="menu__toggler">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="links" id="links">
+              <a href="/index.html">Home</a>
+              <a href="./about-crypto.html">About</a>
+              <a href="./blog.html">Blog</a>
+              <a href="./coins.html">Coins</a>
+              <a href="./contact.html">Contact</a>
+              <div class="login-side" id="profileNameChange">
+                <a href="./signup.html">
+                  <i class="fa-solid fa-user"></i>Sign Up</a
+                >
+                <i class="fa-regular fa-sun" id="toggleDark"></i>
+              </div>
+              <div class="login-side" id="profileName">
+                <p id="navbarName"><i class="fa-solid fa-user"></i>Sign Up</p>
+                <div class="dropdown-menu">
+                  <div class="dropdown-menu-name">
+                    <img
+                      src="/assets/images/user_image.png"
+                      id="profileNav"
+                      alt=""
+                    />
+                    <div class="user-details">
+                      <h3 id="dropdown_name">test</h3>
+                      <p id="dropdown_email">test2</p>
+                    </div>
+                  </div>
+                  <a href="profile.html">Profile</a>
+                  <a href="profile-contact.html">Profile contact</a>
+                  <a href="contact.html">Contact</a>
+                  <button id="signoutBtn">Sign out</button>
+                  <i class="fa-regular fa-sun" id="toggleDarkTwo"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <br /><br /><br /><br /><br /><br /><br />
+
+    <h1></h1>
+
+    <main id="all_content">
       <div class="container">
-        <div class="nav-align">
-          <div class="logo">
-            <a href="index.html">
-              <img src="/assets/images/logo_black.png" alt="" id="logo" />
-            </a>
-          </div>
+        <div class="all_content">
+          <div class="profile_mobile_menu" id="profile_mobile_menu">
+            <section id="profile_card">
+              <i class="fa-solid fa-xmark" onclick="profileMenuMobile()"></i>
 
-          <button class="menu__toggler" id="menu__toggler">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <div class="links" id="links">
-            <a href="/index.html">Home</a>
-            <a href="./about-crypto.html">About</a>
-            <a href="./blog.html">Blog</a>
-            <a href="./coins.html">Coins</a>
-            <a href="./contact.html">Contact</a>
-            <div class="login-side" id="profileNameChange">
-              <a href="./signup.html">
-                <i class="fa-solid fa-user"></i>Sign Up</a>
-              <i class="fa-regular fa-sun" id="toggleDark"></i>
-            </div>
-            <div class="login-side" id="profileName">
-              <p id="navbarName"><i class="fa-solid fa-user"></i>Sign Up</p>
-              <div class="dropdown-menu">
-                <div class="dropdown-menu-name">
-                  <img src="/assets/images/user_image.png" id="profileNav" alt="" />
-                  <div class="user-details">
-                    <h3 id="dropdown_name">test</h3>
-                    <p id="dropdown_email">test2</p>
+              <div class="profile_card">
+                <div class="image_container">
+                  <img
+                    src="../../assets/images/user_image.png"
+                    id="profile_p"
+                    alt=""
+                  />
+                  <div class="card_desc">
+                    <h3 id="fullnameTitle">Lorik Rama</h3>
+                    <a href="#" id="helloemail" class="helloemail"
+                      >lorikrama07@gmail.com</a
+                    >
                   </div>
                 </div>
-                <a href="profile.html">Profile</a>
-                <a href="profile-contact.html">Profile contact</a>
-                <a href="contact.html">Contact</a>
-                <button id="signoutBtn">Sign out</button>
-                <i class="fa-regular fa-sun" id="toggleDarkTwo"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </section>
-  <br /><br /><br /><br /><br /><br /><br />
-
-  <h1></h1>
-
-  <main id="all_content">
-    <div class="container">
-      <div class="all_content">
-        <div class="profile_mobile_menu" id="profile_mobile_menu">
-          <section id="profile_card">
-            <i class="fa-solid fa-xmark" onclick="profileMenuMobile()"></i>
-
-            <div class="profile_card">
-              <div class="image_container">
-                <img src="/assets/images/user_image.png" id="profile_p" alt="" />
-                <div class="card_desc">
-                  <h3 id="fullnameTitle">Lorik Rama</h3>
-                  <a href="#" id="helloemail" class="helloemail">lorikrama07@gmail.com</a>
+                <div class="profile_links">
+                  <a href="profile.html" class="profile_active"
+                    ><i class="fa-regular fa-user"></i> My Profile</a
+                  >
+                  <a href="profile-contact.html"
+                    ><i class="fa-solid fa-ticket"></i> My Profile Contacts</a
+                  >
+                  <p class="color_red" onclick="signOut()">
+                    <i class="fa-solid fa-right-from-bracket"></i>Sign Out
+                  </p>
                 </div>
               </div>
-              <div class="profile_links">
-                <a href="profile.html" class="profile_active"><i class="fa-regular fa-user"></i> My Profile</a>
-                <a href="profile-contact.html"><i class="fa-solid fa-ticket"></i> My Profile Contacts</a>
-                <p class="color_red" onclick="signOut()">
-                  <i class="fa-solid fa-right-from-bracket"></i>Sign Out
+            </section>
+          </div>
+          <div class="body_overlay" id="body_overlay"></div>
+          <section id="profile_information">
+            <div class="complete_profile">
+              <div class="complete_profile_info">
+                <h3>Complete your profile</h3>
+                <div class="slider_bg">
+                  <div class="slider_fg">
+                    <div class="slider_number"><span> 85%</span></div>
+                  </div>
+                </div>
+                <p class="info_text">
+                  Get the best out of booking by adding the remaining details!
                 </p>
-              </div>
-            </div>
-          </section>
-        </div>
-        <div class="body_overlay" id="body_overlay"></div>
-        <section id="profile_information">
-          <div class="complete_profile">
-            <div class="complete_profile_info">
-              <h3>Complete your profile</h3>
-              <div class="slider_bg">
-                <div class="slider_fg">
-                  <div class="slider_number"><span> 85%</span></div>
-                </div>
-              </div>
-              <p class="info_text">
-                Get the best out of booking by adding the remaining details!
-              </p>
-              <div class="three_verifications">
-                <div class="verify_email">
-                  <i class="fa-solid fa-check"></i>
-                  <span>Verified Email</span>
-                </div>
-                <div class="verified_mobile_number">
-                  <i class="fa-solid fa-check"></i>
-                  <span>Verified Mobile Number</span>
-                </div>
-                <div class="basic_info">
-                  <i class="fa-solid fa-plus"></i>
-                  <span>Complete Basic Info</span>
+                <div class="three_verifications">
+                  <div class="verify_email">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Verified Email</span>
+                  </div>
+                  <div class="verified_mobile_number">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Verified Mobile Number</span>
+                  </div>
+                  <div class="basic_info">
+                    <i class="fa-solid fa-plus"></i>
+                    <span>Complete Basic Info</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="personal_information">
-            <div class="personal_information_content">
-              <h1 class="pi_title">Personal Information</h1>
-              <div class="upload_images">
-                <p class="gray_text" style="margin-bottom: 15px">
-                  Upload your profile photo<span class="all_sign">*</span>
-                </p>
-                <div class="labels">
-                  <label for="upload_image">
-                    <img src="" class="avatar_info" alt="" />
-                  </label>
-                  <label for="upload_image" id="changePfp" class="change_btn">Change</label>
-                  <input type="file" name="upload_image" id="upload_image" />
-                  <!-- <h2 id="user-greeting"></h2> -->
-                </div>
-                <div class="forms">
-                  <div class="col">
-                    <label for="name">Full name<span class="all_sign">*</span></label><br />
-                    <input type="text" name="name" id="profileNameValue" placeholder="Full name" />
+            <div class="personal_information">
+              <div class="personal_information_content">
+                <h1 class="pi_title">Personal Information</h1>
+                <div class="upload_images">
+                  <p class="gray_text" style="margin-bottom: 15px">
+                    Upload your profile photo<span class="all_sign">*</span>
+                  </p>
+                  <div class="labels">
+                    <label for="upload_image">
+                      <img src="" class="avatar_info" alt="" />
+                    </label>
+                    <label for="upload_image" id="changePfp" class="change_btn"
+                      >Change</label
+                    >
+                    <input type="file" name="upload_image" id="upload_image" />
+                    <!-- <h2 id="user-greeting"></h2> -->
                   </div>
-                  <br />
-                  <div class="col">
-                    <label for="name">Email address<span class="all_sign">*</span></label><br />
-                    <input type="email" name="email" id="profileEmailValue" placeholder="Email address" />
-                  </div>
-                  <div class="col">
-                    <p>
-                      Account Status:
-                      <strong> <span id="accountStatus"></span></strong>
-                    </p>
-                  </div>
-                  <br />
-                  <!-- <div class="col col_button">
+                  <div class="forms">
+                    <div class="col">
+                      <label for="name"
+                        >Full name<span class="all_sign">*</span></label
+                      ><br />
+                      <input
+                        type="text"
+                        name="name"
+                        id="profileNameValue"
+                        placeholder="Full name"
+                      />
+                    </div>
+                    <br />
+                    <div class="col">
+                      <label for="name"
+                        >Email address<span class="all_sign">*</span></label
+                      ><br />
+                      <input
+                        type="email"
+                        name="email"
+                        id="profileEmailValue"
+                        placeholder="Email address"
+                      />
+                    </div>
+                    <div class="col">
+                      <p>
+                        Account Status:
+                        <strong> <span id="accountStatus"></span></strong>
+                      </p>
+                    </div>
+                    <br />
+                    <!-- <div class="col col_button">
                       <button type="submit" class="save_changes">
                         Save Changes
                       </button>
                     </div> -->
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="update_email">
-            <div class="email_content">
-              <div class="pi_title">
-                <h1>Update name</h1>
+            <div class="update_email">
+              <div class="email_content">
+                <div class="pi_title">
+                  <h1>Update name</h1>
+                  <br />
+                  <p class="gray_text">
+                    Your current name is
+                    <span id="changeName"></span>
+                  </p>
+                </div>
                 <br />
-                <p class="gray_text">
-                  Your current name is
-                  <span id="changeName"></span>
-                </p>
-              </div>
-              <br />
-              <div class="enter_email">
-                <label for="enteremail">Enter your new name<span class="all_sign">*</span></label>
+                <div class="enter_email">
+                  <label for="enteremail"
+                    >Enter your new name<span class="all_sign">*</span></label
+                  >
 
-                <input type="text" id="newName" placeholder="Enter your name" />
-                <div class="col_button">
-                  <button type="submit" id="saveName" class="save_changes">
-                    Save Name
-                  </button>
+                  <input
+                    type="text"
+                    id="newName"
+                    placeholder="Enter your name"
+                  />
+                  <div class="col_button">
+                    <button type="submit" id="saveName" class="save_changes">
+                      Save Name
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="update_email">
-            <div class="email_content">
-              <div class="pi_title">
-                <h1>Update email</h1>
+            <div class="update_email">
+              <div class="email_content">
+                <div class="pi_title">
+                  <h1>Update email</h1>
+                  <br />
+                  <p class="gray_text">
+                    Your current email address is
+                    <span id="changeEmail"></span>
+                  </p>
+                </div>
                 <br />
-                <p class="gray_text">
-                  Your current email address is
-                  <span id="changeEmail"></span>
-                </p>
-              </div>
-              <br />
-              <div class="enter_email">
-                <label for="enteremail">Enter your new email id<span class="all_sign">*</span></label>
+                <div class="enter_email">
+                  <label for="enteremail"
+                    >Enter your new email id<span class="all_sign"
+                      >*</span
+                    ></label
+                  >
 
-                <input type="email" id="newEmail" placeholder="Enter your email id" />
-                <div class="col_button">
-                  <button type="submit" id="saveEmail" class="save_changes">
-                    Save Email
-                  </button>
+                  <input
+                    type="email"
+                    id="newEmail"
+                    placeholder="Enter your email id"
+                  />
+                  <div class="col_button">
+                    <button type="submit" id="saveEmail" class="save_changes">
+                      Save Email
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="update_email">
-            <div class="email_content">
-              <div class="pi_title">
-                <h1>Update password</h1>
+            <div class="update_email">
+              <div class="email_content">
+                <div class="pi_title">
+                  <h1>Update password</h1>
+                  <br />
+                </div>
                 <br />
-              </div>
-              <br />
-              <div class="enter_email">
-                <label for="enteremail">Current password<span class="all_sign">*</span></label>
+                <div class="enter_email">
+                  <label for="enteremail"
+                    >Current password<span class="all_sign">*</span></label
+                  >
 
-                <input type="password" id="newPsw" placeholder="Current password" />
-              </div>
-              <div class="enter_email">
-                <label for="enteremail">Enter your new password
-                  <span class="all_sign">*</span></label>
+                  <input
+                    type="password"
+                    id="newPsw"
+                    placeholder="Current password"
+                  />
+                </div>
+                <div class="enter_email">
+                  <label for="enteremail"
+                    >Enter your new password
+                    <span class="all_sign">*</span></label
+                  >
 
-                <input type="password" id="newPswSec" placeholder="Enter your new password" />
-                <div class="col_button">
-                  <button type="submit" id="savePsw" class="save_changes">
-                    Save Password
-                  </button>
+                  <input
+                    type="password"
+                    id="newPswSec"
+                    placeholder="Enter your new password"
+                  />
+                  <div class="col_button">
+                    <button type="submit" id="savePsw" class="save_changes">
+                      Save Password
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-      </div>
-    </div>
-  </main>
-
-  <section id="all">
-    <div class="chart-div">
-      <p style="font-size: 30px; margin: 20px">Portfolio of Currencies</p>
-      <div class="the-chart">
-        <canvas id="myLineChart"></canvas>
-      </div>
-    </div>
-    <br />
-    <div class="assests">
-      <!-- starts -->
-      <div class="container-table">
-        <h1 class="trans-h1">Make a Transaction</h1>
-
-        <br />
-        <!-- <hr /> -->
-        <br />
-
-        <form class="the-form" id="form">
-          <div class="form-control">
-            <label>Type</label>
-            <input type="text" id="name" />
-          </div>
-
-          <br />
-
-          <div class="form-control">
-            <label>Method</label>
-            <input type="text" id="email" />
-          </div>
-
-          <br />
-
-          <div class="form-control">
-            <label>Amount</label>
-            <input type="number" id="school" />
-          </div>
-
-          <br />
-
-          <div class="form-control">
-            <label>Time</label>
-            <input type="text" id="city" />
-          </div>
-
-          <br />
-
-          <button class="the-button" id="buttonOne">Create</button>
-        </form>
-
-        <br /><br />
-
-        <div class="table" id="table-container"></div>
-      </div>
-    </div>
-    <div class="card-contact">
-      <div class="tittle-text">
-        <h1 class="card-tittle">Your Contacts</h1>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-          voluptate placeat, quas, cum quo sapiente reiciendis vel harum
-          recusandae neque maiores commodi repellat, repudiandae illum id
-          quidem. Reiciendis, debitis earum!
-        </p>
-      </div>
-      <div class="card-and-contact">
-        <div class="card">
-          <img src="/assets/profile-images/card-gif.gif" alt="" class="card-gif" />
+          </section>
         </div>
-        <div class="contact">
-          <div class="first-contact-row">
-            <div class="first-contact">
-              <a href="/assets/pages/profile-contact.html" class="add-contact-link">
-                <i class="fa-solid fa-plus contact-plus"></i>
-              </a>
+      </div>
+    </main>
+
+    <section id="all">
+      <div class="chart-div">
+        <p style="font-size: 30px; margin: 20px">Portfolio of Currencies</p>
+        <div class="the-chart">
+          <canvas id="myLineChart"></canvas>
+        </div>
+      </div>
+      <br />
+      <div class="assests">
+        <!-- starts -->
+        <div class="container-table">
+          <h1 class="trans-h1">Make a Transaction</h1>
+
+          <br />
+          <!-- <hr /> -->
+          <br />
+
+          <form class="the-form" id="form">
+            <div class="form-control">
+              <label>Type</label>
+              <input type="text" id="name" />
             </div>
-            <div class="first-contact">
-              <img src="/assets/profile-images/profile2.png" class="contact-icon" />
+
+            <br />
+
+            <div class="form-control">
+              <label>Method</label>
+              <input type="text" id="email" />
             </div>
-            <div class="first-contact">
-              <img src="/assets/profile-images/profile3.png" class="contact-icon" />
+
+            <br />
+
+            <div class="form-control">
+              <label>Amount</label>
+              <input type="number" id="school" />
             </div>
-            <div class="first-contact">
-              <img src="/assets/profile-images/profile4.png" class="contact-icon" />
+
+            <br />
+
+            <div class="form-control">
+              <label>Time</label>
+              <input type="text" id="city" />
             </div>
+
+            <br />
+
+            <button class="the-button" id="buttonOne">Create</button>
+          </form>
+
+          <br /><br />
+
+          <div class="table" id="table-container"></div>
+        </div>
+      </div>
+      <div class="card-contact">
+        <div class="tittle-text">
+          <h1 class="card-tittle">Your Contacts</h1>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            voluptate placeat, quas, cum quo sapiente reiciendis vel harum
+            recusandae neque maiores commodi repellat, repudiandae illum id
+            quidem. Reiciendis, debitis earum!
+          </p>
+        </div>
+        <div class="card-and-contact">
+          <div class="card">
+            <img
+              src="../../assets/profile-images/card-gif.gif"
+              alt=""
+              class="card-gif"
+            />
           </div>
-          <div class="second-contact-row">
-            <div class="first-contact">
-              <img src="/assets/profile-images/profile5.png" class="contact-icon" />
+          <div class="contact">
+            <div class="first-contact-row">
+              <div class="first-contact">
+                <a
+                  href="../../assets/pages/profile-contact.html"
+                  class="add-contact-link"
+                >
+                  <i class="fa-solid fa-plus contact-plus"></i>
+                </a>
+              </div>
+              <div class="first-contact">
+                <img
+                  src="../../assets/profile-images/profile2.png"
+                  class="contact-icon"
+                />
+              </div>
+              <div class="first-contact">
+                <img
+                  src="../../assets/profile-images/profile3.png"
+                  class="contact-icon"
+                />
+              </div>
+              <div class="first-contact">
+                <img
+                  src="../../assets/profile-images/profile4.png"
+                  class="contact-icon"
+                />
+              </div>
             </div>
-            <div class="first-contact">
-              <img src="/assets/profile-images/profile6.png" class="contact-icon" />
+            <div class="second-contact-row">
+              <div class="first-contact">
+                <img
+                  src="../../assets/profile-images/profile5.png"
+                  class="contact-icon"
+                />
+              </div>
+              <div class="first-contact">
+                <img
+                  src="../../assets/profile-images/profile6.png"
+                  class="contact-icon"
+                />
+              </div>
+              <div class="first-contact">
+                <img
+                  src="../../assets/profile-images/profile7.png"
+                  class="contact-icon"
+                />
+              </div>
+              <div class="first-contact">
+                <img
+                  src="../../assets/profile-images/profile8.png"
+                  class="contact-icon"
+                />
+              </div>
             </div>
-            <div class="first-contact">
-              <img src="/assets/profile-images/profile7.png" class="contact-icon" />
-            </div>
-            <div class="first-contact">
-              <img src="/assets/profile-images/profile8.png" class="contact-icon" />
-            </div>
-          </div>
-          <!-- <div class="third-contact-row">
+            <!-- <div class="third-contact-row">
             <div class="first-contact">
               <img src="images/profile6.png" class="contact-icon">
             </div>
@@ -353,56 +450,59 @@
               <img src="images/profile8.png" class="contact-icon">
             </div>
           </div> -->
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer id="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-about footer-box">
-          <a href="index.html">
-            <img src="/assets/profile-images/logo_white.png" alt="" />
-          </a>
-          <div class="about-text">
-            <p>
-              Enter your email to be notified by <span> CoinTracker </span>
-            </p>
-            <div class="about-email">
-              <input type="email" id="aboutEmail" placeholder="Your Email..." />
-            </div>
           </div>
         </div>
-        <div class="footer-box">
-          <a href="#">Blog</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
-          <a href="#">Explore</a>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about footer-box">
+            <a href="index.html">
+              <img src="../../assets/profile-images/logo_white.png" alt="" />
+            </a>
+            <div class="about-text">
+              <p>
+                Enter your email to be notified by <span> CoinTracker </span>
+              </p>
+              <div class="about-email">
+                <input
+                  type="email"
+                  id="aboutEmail"
+                  placeholder="Your Email..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="footer-box">
+            <a href="#">Blog</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Explore</a>
+          </div>
+          <div class="footer-box">
+            <a href="#">Account</a>
+            <a href="#">Favourites</a>
+            <a href="#">Settings</a>
+            <a href="#">Login</a>
+          </div>
         </div>
-        <div class="footer-box">
-          <a href="#">Account</a>
-          <a href="#">Favourites</a>
-          <a href="#">Settings</a>
-          <a href="#">Login</a>
+        <div class="copyright-div">
+          <div class="left-copy">
+            <p>Copyrights ©2023 CoinTracker. All rights reserved.</p>
+          </div>
+          <div class="right-copy">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and conditions</a>
+            <a href="#">Refund policy</a>
+          </div>
         </div>
       </div>
-      <div class="copyright-div">
-        <div class="left-copy">
-          <p>Copyrights ©2023 CoinTracker. All rights reserved.</p>
-        </div>
-        <div class="right-copy">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms and conditions</a>
-          <a href="#">Refund policy</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="/js/profile.js"></script>
-  <script src="/js/app.js"></script>
-  <script src="/js/signout.js"></script>
-</body>
-
+    <script src="../../js/profile.js"></script>
+    <script src="../../js/app.js"></script>
+    <script src="../../js/signout.js"></script>
+  </body>
 </html>
