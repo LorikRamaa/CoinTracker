@@ -15,7 +15,7 @@ async function getPrices() {
         console.log(coinId);
         let coinData = document.querySelector("#" + coinId + "-data");
         coinData.innerHTML = `<img src="../../assets/images/${coinId}.png" alt="" />
-        <a href="/assets/pages/cryptoPage.html?id=${coinId}">${coin.name} </a>
+        <a href="../../assets/pages/cryptoPage.html?id=${coinId}">${coin.name} </a>
         `;
       });
     });
