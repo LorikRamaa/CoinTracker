@@ -216,6 +216,7 @@ function changePfp() {
     profileNav.src =
       "../../assets/profiles/" +
         changedImgUser.find((user) => user.id === userId)?.pfp || "";
+    location.reload();
   }
 }
 changeBtn.addEventListener("change", changePfp);
