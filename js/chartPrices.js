@@ -7,8 +7,8 @@ async function fetchData() {
   displayProduct(cruptoData);
 }
 
+let count = document.getElementById("buy").value;
 function updatePrice() {
-  let count = document.getElementById("buy").value;
   let price = document.getElementById("coin_price").innerText;
   let priceHolder = document.getElementById("coinToEur");
   let priceHolderBuy = document.getElementById("btcToEurBuy");
@@ -27,7 +27,7 @@ function displayProduct(data) {
       <div class="crypto-name-div">
         <h1 class="crypto-name">
           <img
-            src="/assets/images/${data[0].asset_id.toLowerCase()}.png"
+            src="../../assets/images/${data[0].asset_id.toLowerCase()}.png"
             class="crypto-logo"
             id="crypto-logo"
             alt=""
@@ -67,7 +67,7 @@ function displayProduct(data) {
         </div>
         <div class="crypto-buy-details">
           <h2>
-            <span id="inputValue">1</span
+            <span id="inputValue">${count}</span
             ><span id="input-coin"> ${data[0].asset_id}=</span>
           </h2>
           <h2>EUR&euro; <span id="coinToEur">  ${data[0].price_usd.toFixed(3)}
