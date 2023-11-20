@@ -21,7 +21,7 @@ async function pricing() {
       </ul>
       <div class="pricing-button-div">
         <button class="buy-now">
-            <a href="/assets/pages/checkout.html?id=BASIC">Buy</a>
+            <a href="../../assets/pages/checkout.html?id=BASIC">Buy</a>
         </button>
       </div>
     </div>
@@ -37,7 +37,7 @@ async function pricing() {
       </ul>
       <div class="pricing-button-div">
         <button class="buy-now">
-            <a href="/assets/pages/checkout.html?id=PREMIUM">Buy</a>
+            <a href="../../assets/pages/checkout.html?id=PREMIUM">Buy</a>
         </button>
       </div>
     </div>
@@ -53,7 +53,7 @@ async function pricing() {
       </ul>
       <div class="pricing-button-div">
         <button class="buy-now">
-            <a href="/assets/pages/checkout.html?id=STANDARD">Buy</a>
+            <a href="../../assets/pages/checkout.html?id=STANDARD">Buy</a>
         </button>
       </div>
     </div>
