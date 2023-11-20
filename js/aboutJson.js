@@ -1,6 +1,6 @@
 async function fetchData() {
   const productId = new URLSearchParams(window.location.search).get("id");
-  const response = await fetch(`/js/aboutCrypto.json?id=${productId}`);
+  const response = await fetch(`../../js/aboutCrypto.json?id=${productId}`);
 
   const data = await response.json();
   console.log(data);
@@ -26,4 +26,4 @@ async function fetchData() {
   // spinner.style.display = "none";
 }
 fetchData();
-+28
++28;

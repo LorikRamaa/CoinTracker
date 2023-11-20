@@ -170,7 +170,7 @@ function buySignedOut(data) {
 
     <div class="doneButton">
       <button id="done" onclick="unActiveBuy()">
-        <a href="/assets/pages/signup.html">
+        <a href="../../assets/pages/signup.html">
           Sign Up
         </a>
       </button>
@@ -183,7 +183,7 @@ function buySignedOut(data) {
 
       <div class="doneButton">
         <button id="done" onclick="unActiveBuy()">
-          <a href="/assets/pages/payment.html">
+          <a href="../../assets/pages/payment.html">
             Payment
           </a>
         </button>
@@ -205,9 +205,9 @@ toggle.addEventListener("click", function () {
   console.log(logo);
 
   if (this.classList.toggle("fa-sun")) {
-    logo.src = "/assets/images/logo_black.png";
+    logo.src = "../../assets/images/logo_black.png";
   } else {
-    logo.src = "/assets/images/logo_white.png";
+    logo.src = "../../assets/images/logo_white.png";
   }
 });
 
