@@ -67,7 +67,7 @@ function displayProduct(data) {
         </div>
         <div class="crypto-buy-details">
           <h2>
-            <span id="inputValue">${count}</span
+            <span id="inputValue">1</span
             ><span id="input-coin"> ${data[0].asset_id}=</span>
           </h2>
           <h2>EUR&euro; <span id="coinToEur">  ${data[0].price_usd.toFixed(3)}
